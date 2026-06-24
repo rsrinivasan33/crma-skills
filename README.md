@@ -1,6 +1,6 @@
 # CRMA Dashboard — Claude Code Skills
 
-Four Claude Code skills for building and maintaining CRM Analytics (CRMA) dashboards from within Claude Code.
+Five Claude Code skills for building and maintaining CRM Analytics (CRMA) dashboards and data prep recipes from within Claude Code.
 
 ---
 
@@ -12,6 +12,7 @@ Four Claude Code skills for building and maintaining CRM Analytics (CRMA) dashbo
 | `CRMA-dashboard-design` | UX design standards — layout, colors, typography, widget sizing |
 | `CRMA-binding` | Reference guide for bindings — dynamic filters, cross-dataset interactions, computed colors |
 | `CRMA-DLO-Query-Rules` | Addendum for dashboards backed by Data Cloud objects (DLOs, DMOs, Calculated Insights) |
+| `crma-recipe-development` | Build, deploy, update, and run CRMA Data Prep Recipes via the Analytics REST API |
 
 ---
 
@@ -46,6 +47,8 @@ CRMA-dashboard-development     ← build methodology (JSON structure, deploy, va
 CRMA-binding                   ← add when building interactive or cross-dataset filters
         +
 CRMA-DLO-Query-Rules           ← add when data source is a Data Cloud object
+        +
+crma-recipe-development        ← use when building or updating Data Prep Recipes (.wdpr)
 ```
 
 **CRMA-DLO-Query-Rules** is an addendum — invoke it alongside the base skills whenever your dashboard queries a Data Lake Object (`.dll`), Data Model Object (`.dmo`), or Calculated Insight (`.ci`). Data Cloud-backed steps have different query structure rules that cause component errors if the standard rules are applied.
@@ -57,6 +60,7 @@ CRMA-DLO-Query-Rules           ← add when data source is a Data Cloud object
 ```
 /CRMA-dashboard-development
 /CRMA-dashboard-design
+/crma-recipe-development
 ```
 
 Claude will ask for a reference dashboard and walk through the build following the design standards.
